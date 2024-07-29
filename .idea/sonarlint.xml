@@ -3,6 +3,7 @@
   <component name="SonarLintProjectSettings">
     <option name="moduleMapping">
       <map>
+        <entry key="Strings" value="untitled" />
         <entry key="strings" value="section6" />
       </map>
     </option>
