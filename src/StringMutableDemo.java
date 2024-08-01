@@ -1,7 +1,7 @@
 import java.io.CharArrayWriter;
 import java.io.IOException;
 
-public class MutableStringsDemo {
+public class StringMutableDemo {
 
     public static void main(String[] args) throws IOException {
 
