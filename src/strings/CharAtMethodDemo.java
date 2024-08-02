@@ -1,3 +1,5 @@
+package strings;
+
 public class CharAtMethodDemo {
 
     public static void main(String[] args) {

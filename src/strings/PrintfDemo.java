@@ -1,3 +1,5 @@
+package strings;
+
 public class PrintfDemo {
 
     public static void main(String[] args) {

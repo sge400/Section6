@@ -1,3 +1,5 @@
+package strings;
+
 import java.io.CharArrayWriter;
 import java.io.IOException;
 

@@ -1,3 +1,5 @@
+package strings;
+
 public class InternMethodDemo {
 
     public static void main(String[] args) {

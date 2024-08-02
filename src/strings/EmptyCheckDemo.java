@@ -1,3 +1,5 @@
+package strings;
+
 public class EmptyCheckDemo {
 
     public static void main(String[] args) {

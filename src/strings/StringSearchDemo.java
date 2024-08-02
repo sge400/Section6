@@ -1,3 +1,5 @@
+package strings;
+
 public class StringSearchDemo {
 
     public static void main(String[] args) {
