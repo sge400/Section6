@@ -11,10 +11,13 @@ public class TernaryOperator {
 //            y = 30;
 //        }
 
-        y = x > 5 ? 20 : x==y ? 40 : x != y ? 50 : 60;
-        System.out.println(y);
+        //y = x > 5 ? 20 : x==y ? 40 : x != y ? 50 : 60;
+        //System.out.println(y);
 
         sum(x, x > 5 ? 20 : 30);
+
+        int score = 90;
+        String rank = score ==90 ?  "noob" : "master";
     }
 
     public static void sum (int x, int y){
