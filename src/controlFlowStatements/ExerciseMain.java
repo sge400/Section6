@@ -2,7 +2,9 @@ package controlFlowStatements;
 
 public class ExerciseMain {
     public static void main(String[] args) {
-        Exercise.findDivisibleNumber(2,3);
-        Exercise.findDivisibleNumber(2,5);
+        int result = Exercise.findDivisibleNumber(2,3);
+        System.out.println(result);
+        result = Exercise.findDivisibleNumber(2,5);
+        System.out.println(result);
     }
 }

@@ -13,7 +13,6 @@ public class Exercise {
 
             }
         }
-        System.out.println(i);
         return i;
 
     }
