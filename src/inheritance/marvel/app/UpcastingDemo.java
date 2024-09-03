@@ -10,10 +10,12 @@ public class UpcastingDemo {
         Animal anm = new Animal();
         anm.setName("Scooby");
         AnimalUtility.printName(anm);
+        //anm.eat(); //eat() from SuperClass
 
         anm = new Dog(); //Upcasting, a dog is an animal
         anm.setName("Charlie");
         AnimalUtility.printName(anm);
+       // anm.eat(); //eat() from subclass Dog
 
         Cat cat = new Cat();
         cat.setName("Snoopy");
