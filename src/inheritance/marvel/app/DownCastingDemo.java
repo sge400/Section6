@@ -12,6 +12,13 @@ public class DownCastingDemo {
         anm = dog;  //upcasting
         dog = (Dog) anm;  //downcasting needs to done manually. Not every animal is a dog!
 
+        AnimalUtility.performAction(dog);
+
         //Cat cat = (Cat) anm; //throws a ClassCastException because a cat is not a dog.
+        if (anm instanceof Cat){
+            Cat cat = (Cat) anm;
+            //AnimalUtility.performAction(cat);
+        }
+
     }
 }
