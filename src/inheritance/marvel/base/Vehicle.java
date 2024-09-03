@@ -8,12 +8,12 @@ public class Vehicle {
     public double turningRadius;
     public String madeFor;
 
-    public Vehicle() {
+    public Vehicle(String madeFor) {
         System.out.println("Inside Vehicle default constructor");
         horsePower = 120;
         color = "White";
         turningRadius = 5.23;
-        madeFor = "Road";
+        this.madeFor = madeFor;
     }
 
     public static void start() {

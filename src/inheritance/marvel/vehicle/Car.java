@@ -11,7 +11,7 @@ public class Car extends Vehicle {
     public boolean isAutomatic;
 
     public Car() {
-        super(); //this gets done automatically, even if you remove this statement (only for default constructors)
+        super("Water");
         System.out.println("Inside Car default constructor");
         horsePower = 150;
         color = "Black";
