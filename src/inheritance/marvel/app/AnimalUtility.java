@@ -17,10 +17,15 @@ public class AnimalUtility {
         if (animal instanceof Dog) {
             Dog dog = (Dog) animal;
             dog.bark();
-        } else if (animal instanceof Cat) {
-            Cat cat = (Cat) animal;
+        } else if (animal instanceof Cat) { //Java 16: } else if (animal instanceof Cat cat)  {
+            Cat cat = (Cat) animal;         // this can be removed as downcasting happens automatically
             cat.meow();
         }
+
+        String input = "Hello";
+
+        //if (animal instanceof Engine) // compilation error!
+        //instanceof Operator can only be used on classes that have an inheritance relationship!
 
     }
 }
