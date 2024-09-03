@@ -6,6 +6,7 @@ import inheritance.marvel.base.Animal;
 
 public class AnimalUtility {
 
+    //classic example of polymorphism; depending on object passed in it decides which eat() needs to be invoked
     public static void printName(Animal animal) {
         System.out.println(animal.getName());
         animal.eat();
