@@ -4,6 +4,11 @@ public class Person {
 
     protected String name;
     protected int age;
+    public static int noOfHands = 2;
+
+    protected void calculateAge(int year) {
+        System.out.println("Age method");
+    }
 
     public void eat(String food) {
         System.out.println("Person is eating the food: " + food);
