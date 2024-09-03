@@ -13,4 +13,14 @@ public class IronMan extends Person {
         System.out.println("IronMan walking with his suit"); //access modifier can't be more restrictive than original method
     }
 
+    @Override
+    public void eat(String food) {
+        super.eat("Pasta");
+        System.out.println("IronMan is eating the food: " + food);
+    }
+
+    public void callOverriddenEatMethod() {
+        super.eat("Pasta");
+    }
+
 }
