@@ -1,6 +1,8 @@
 package interfaces.marvel.hero;
 
-public interface Superhero {
+public interface Superhero extends Person{
+
+    String UNIVERSE_NAME = "Marvel"; //public static final by default
 
     String usePower(); //abstract keyword not needed
 
