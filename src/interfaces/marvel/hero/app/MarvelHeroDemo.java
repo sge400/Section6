@@ -26,5 +26,6 @@ public class MarvelHeroDemo {
     private static void invokeSuperHero(Superhero superhero) {
         System.out.println(superhero.usePower());
         System.out.println(superhero.stopVillain('N'));
+
     }
 }

@@ -24,4 +24,8 @@ public class SpiderMan implements Superhero {
         System.out.println("I am in " + liveLocation);
         return liveLocation;
     }
+
+    public static String commonCharacteristics() {
+        return "Superhuman abilities, Willingness to sacrifice";
+    }
 }

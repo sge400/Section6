@@ -19,4 +19,8 @@ public interface Superhero extends Person{
         System.out.println("I am in " + liveLocation);
         return liveLocation;
     }
+
+    static String commonCharacteristics() {
+        return "Superhuman abilities, Willingness to sacrifice";
+    }
 }
