@@ -2,6 +2,7 @@ package interfaces.marvel.hero.app;
 
 import interfaces.marvel.hero.Superhero;
 import interfaces.marvel.hero.impl.CaptainAmerica;
+import interfaces.marvel.hero.impl.Developer;
 import interfaces.marvel.hero.impl.IronMan;
 import interfaces.marvel.hero.impl.SpiderMan;
 
@@ -21,6 +22,9 @@ public class MarvelHeroDemo {
 
         Superhero captainAmerica = new CaptainAmerica();
         invokeSuperHero(captainAmerica);
+
+        Developer developer = new Developer();
+        developer.walk(); //inherited from superclass, not the interface
     }
 
     private static void invokeSuperHero(Superhero superhero) {
