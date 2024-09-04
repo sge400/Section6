@@ -4,7 +4,7 @@ public interface Superhero extends Person{
 
     String UNIVERSE_NAME = "Marvel"; //public static final by default
 
-    String usePower(); //abstract keyword not needed
+    String usePower(); //abstract keyword not needed, final keyword not permitted
 
     /**
      * If Y received kill the villain
