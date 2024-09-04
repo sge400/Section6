@@ -1,6 +1,6 @@
 package interfaces.marvel.hero;
 
-public interface Superhero extends Person{
+public interface Superhero extends Person, Hero{
 
     String UNIVERSE_NAME = "Marvel"; //public static final by default
 
@@ -22,5 +22,10 @@ public interface Superhero extends Person{
 
     static String commonCharacteristics() {
         return "Superhuman abilities, Willingness to sacrifice";
+    }
+
+    @Override
+    default void walk() {
+        Hero.super.walk();
     }
 }
