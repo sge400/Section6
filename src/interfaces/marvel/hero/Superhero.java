@@ -13,4 +13,10 @@ public interface Superhero extends Person{
      * @return - Returns status
      */
     String stopVillain(char c);
+
+    default String trackLiveLocation() {
+        String liveLocation = "USA";
+        System.out.println("I am in " + liveLocation);
+        return liveLocation;
+    }
 }
