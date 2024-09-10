@@ -43,10 +43,11 @@ public class ArithmeticOperationsBFR {
         } else {
             result = num1 / num2;
         }
+        bf.close();
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(result);
-        //make numbers double, optimize code and use switch statement
+        //make numbers double, optimize code and use switch statement: can't divide by zero
 
 
 
