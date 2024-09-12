@@ -1,26 +1,27 @@
 package guessing.game;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNumberGame {
+    private final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("Let's play a game! It's called Guess The Number.\n");
-        willPlay();
+        GuessNumberGame game = new GuessNumberGame();
+        game.willPlay();
 
     }
 
-    public static void willPlay(){
-        GuessNumberGame game = new GuessNumberGame();
+    public void willPlay(){
 
         boolean validAnswer = false;
-        Scanner scanner = new Scanner(System.in);
         while(!validAnswer) {
             System.out.println("Do you want to play? Type y for yes, n for no: ");
             String play = scanner.nextLine();
             if(play.equals("y")) {
-                game.startGame();
+                startGame();
                 validAnswer = true;
             } else if (play.equals("n")) {
                 System.out.println("You are no fun! Goodbye!!!");
