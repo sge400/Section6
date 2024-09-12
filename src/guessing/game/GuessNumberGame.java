@@ -67,9 +67,9 @@ public class GuessNumberGame {
     }
 
     public int getUserGuessedNumber() {
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         System.out.println("Please guess the number: ");
-        return sc.nextInt();
+        return scanner.nextInt();
         //close connection?
     }
 
