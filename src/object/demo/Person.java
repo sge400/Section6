@@ -51,19 +51,15 @@ public class Person { //POJO class
     }
 
     @Override
-    public int hashCode(){
-        return Objects.hash(name, age, gender, ssn);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age && gender == person.gender && ssn == person.ssn && Objects.equals(name, person.name);
     }
 
     @Override
-    public boolean equals(Object o){
-        if(this == o) {
-            return true;
-        }
-        if(o == null || (getClass()) != o.getClass()) {
-            return false;
-        }
-        Person person = (Person) o; //downcasting
-        return age == person.getAge() && gender == person.getGender() && ssn == person.getSsn() && Objects.equals(name, person.getName());
+    public int hashCode() {
+        return Objects.hash(name, age, gender, ssn);
     }
 }
