@@ -72,4 +72,9 @@ public class Person { //POJO class
                 ", ssn=" + ssn +
                 '}';
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object is being destroyed");
+    }
 }
