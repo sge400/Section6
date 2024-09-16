@@ -2,7 +2,7 @@ package object.demo;
 
 import java.util.Objects;
 
-public class Person { //POJO class
+public class Person implements Cloneable { //POJO class
 
     private String name;
     private int age;
@@ -76,5 +76,10 @@ public class Person { //POJO class
     @Override
     protected void finalize() throws Throwable {
         System.out.println("Object is being destroyed");
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
