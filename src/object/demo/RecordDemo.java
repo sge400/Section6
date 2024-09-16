@@ -1,5 +1,7 @@
 package object.demo;
 
+import java.lang.reflect.RecordComponent;
+
 public class RecordDemo {
 
     public static void main(String[] args) {
@@ -8,5 +10,10 @@ public class RecordDemo {
         System.out.println(personRecord.occupation());
         System.out.println(personRecord);
         Class personClass = personRecord.getClass();
+        System.out.println(personClass.isRecord());
+        RecordComponent[] recordComponents = personClass.getRecordComponents();
+        for (RecordComponent r : recordComponents) {
+            System.out.println(r.toString());
+        }
     }
 }
