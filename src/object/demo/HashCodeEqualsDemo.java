@@ -8,5 +8,8 @@ public class HashCodeEqualsDemo {
         System.out.println(p1.hashCode());
         System.out.println(p2.hashCode());
         System.out.println(p1.equals(p2)); //false, after overriding hashCode and equals will return true
+        System.out.println(p1);
+        System.out.println(p2);
+
     }
 }

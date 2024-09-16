@@ -62,4 +62,14 @@ public class Person { //POJO class
     public int hashCode() {
         return Objects.hash(name, age, gender, ssn);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", ssn=" + ssn +
+                '}';
+    }
 }
