@@ -1,5 +1,7 @@
 package object.demo;
 
+import java.util.Objects;
+
 public class Person { //POJO class
 
     private String name;
@@ -46,5 +48,22 @@ public class Person { //POJO class
 
     public void setSsn(int ssn) {
         this.ssn = ssn;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(name, age, gender, ssn);
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(this == o) {
+            return true;
+        }
+        if(o == null || (getClass()) != o.getClass()) {
+            return false;
+        }
+        Person person = (Person) o; //downcasting
+        return age == person.getAge() && gender == person.getGender() && ssn == person.getSsn() && Objects.equals(name, person.getName());
     }
 }

@@ -7,6 +7,6 @@ public class HashCodeEqualsDemo {
         Person p2 = new Person("John", 25, 'M', 564323456);
         System.out.println(p1.hashCode());
         System.out.println(p2.hashCode());
-        System.out.println(p1.equals(p2)); //false
+        System.out.println(p1.equals(p2)); //false, after overriding hashCode and equals will return true
     }
 }
