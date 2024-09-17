@@ -32,5 +32,15 @@ public class SortingDemo {
         System.out.println(countries);
         countries.sort(Comparator.reverseOrder());
         System.out.println(countries);
+
+        var countries1 = new ArrayList<String>();
+        countries1.add("India");
+        countries1.add("USA");
+        countries1.add("Japan");
+        countries1.add("France");
+        countries1.add("Canada");
+        //countries1.sort(new LastCharComparator());
+        Collections.sort(countries1, new LastCharComparator());
+        System.out.println(countries1);
     }
 }
