@@ -15,5 +15,10 @@ public class HashSetDemo {
         visitedCountries.add("India");
         System.out.println(visitedCountries.size());
         System.out.println(visitedCountries);
+        boolean isDubai = visitedCountries.contains("Germany");
+        System.out.println(isDubai);
+        boolean isRemoved = visitedCountries.remove("Singapore");
+        System.out.println(isRemoved);
+        System.out.println(visitedCountries);
     }
 }
