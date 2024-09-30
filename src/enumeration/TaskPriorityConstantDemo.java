@@ -3,9 +3,10 @@ package enumeration;
 public class TaskPriorityConstantDemo {
 
     public static void main(String[] args) {
-        System.out.println(TaskUtil.getEstimatedCompletionTime(10));
-        System.out.println(TaskUtil.getEstimatedCompletionTime(1));
-        System.out.println(TaskUtil.getEstimatedCompletionTime(2));
-        System.out.println(TaskUtil.getEstimatedCompletionTime(3));
+        System.out.println(TaskUtil.getEstimatedCompletionTime(PriorityEnum.LOW));
+        System.out.println(TaskUtil.getEstimatedCompletionTime(PriorityEnum.MEDIUM));
+        System.out.println(TaskUtil.getEstimatedCompletionTime(PriorityEnum.HIGH));
+        System.out.println(TaskUtil.getEstimatedCompletionTime(PriorityEnum.URGENT));
+        System.out.println(PriorityEnum.URGENT);
     }
 }
