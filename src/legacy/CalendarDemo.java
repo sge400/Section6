@@ -1,5 +1,6 @@
 package legacy;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -28,5 +29,23 @@ public class CalendarDemo {
         gregorianCalendar.set(Calendar.MONTH, Calendar.FEBRUARY);
         Date currentDateObj1 = gregorianCalendar.getTime();
         System.out.println(currentDateObj1);
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss");
+        String formattedDate = dateFormat.format(gregorianCalendar.getTime());
+        System.out.println(formattedDate);
+
+        //Adding and subtracting time units
+        gregorianCalendar.add(Calendar.HOUR, 2);
+        formattedDate = dateFormat.format(gregorianCalendar.getTime());
+        System.out.println(formattedDate);
+        gregorianCalendar.add(Calendar.MONTH, -3);
+        formattedDate = dateFormat.format(gregorianCalendar.getTime());
+        System.out.println(formattedDate);
+
+        //Check for leap year
+        boolean isLeapYear = gregorianCalendar.isLeapYear(2048);
+        System.out.println(isLeapYear);
+
+
     }
 }
