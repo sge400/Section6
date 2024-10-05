@@ -5,9 +5,9 @@ public class PalindromeDemo {
     public static void main(String[] args) {
         String input = "mom";
         StringBuilder sb = new StringBuilder(2); //or StringBuffer
-        String output = sb.append(input).reverse().toString();
+        //String output = sb.append(input).reverse().toString();
 
-        boolean isPalindrome = input.equals(output);
+        boolean isPalindrome = input.equals(sb.append(input).reverse().toString());
 
         System.out.printf("The word %s is a palindrome: %b%n", input, isPalindrome);
     }
