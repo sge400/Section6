@@ -9,7 +9,9 @@ public class AnonymousClassDemo {
                 System.out.println("Anonymous");
             }
         };
+
         process(hello);
+
         process(new Hello() {
             @Override
             public void sayHello() {
