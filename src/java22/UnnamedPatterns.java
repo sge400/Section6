@@ -1,3 +1,4 @@
+/*
 package java22;
 
 import inheritance.marvel.base.Vehicle;
@@ -32,3 +33,4 @@ public class UnnamedPatterns {
         }
     }
 }
+*/

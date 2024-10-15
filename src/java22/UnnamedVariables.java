@@ -1,3 +1,4 @@
+/*
 package java22;
 
 import java.io.BufferedReader;
@@ -75,3 +76,4 @@ public class UnnamedVariables {
 
 record Point(int x, int y) { }
 }
+*/
