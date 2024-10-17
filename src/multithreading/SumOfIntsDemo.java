@@ -16,6 +16,8 @@ public class SumOfIntsDemo {
         System.out.println(result);
         long endTime = System.currentTimeMillis();
         System.out.println("Total time taken by normal Java class is: " + (endTime - startTime));
+
+
     }
 
 }
